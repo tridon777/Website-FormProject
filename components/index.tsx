@@ -26,7 +26,7 @@ class Page extends React.Component<any,void> {
 render((
     <Router history={browserHistory} >
         <Route path="/" component={Page}>
-            <IndexRoute components={{main: ItemPane}} />
+
         </Route>
     </Router>
 ), document.getElementById("example") )
