@@ -1,10 +1,12 @@
 import * as React from "react";
-import { Row } from 'react-bootstrap';
+import { Row, Grid } from 'react-bootstrap';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router';
 import { ItemPane } from './ItemPane';
 import { NavbarB } from './navbar';
 import { MainWindow } from './MainWindow';
+import { Footer } from './Footer';
+
 
 
 
@@ -15,9 +17,12 @@ class Page extends React.Component<any,void> {
         return (
             <div>
                 <NavbarB />
-                <MainWindow />
-                {main}
+                <Grid fluid>
+                    <MainWindow />
+                    {main}
 
+                </Grid>
+                <Footer />
             </div>
         );
     }

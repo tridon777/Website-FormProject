@@ -1,0 +1,15 @@
+.subListGroup {
+  padding-left: .5em;
+  padding-top: .5em;
+  margin-bottom: .5em; }
+  .subListGroup li {
+    text-align: center; }
+    .subListGroup li img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+
+.floatReset {
+  float: none; }
+
+/*# sourceMappingURL=SubWindowLayout.css.map */

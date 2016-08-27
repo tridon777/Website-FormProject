@@ -7,7 +7,7 @@ import { Link } from 'react-router';
 
 
 export interface naviB {}
-let correction = {marginBottom: 0, borderRadius: 0};
+let correction = {marginBottom: 0, borderRadius: 0,};
 let correction2 = {marginBottom: 0, borderRadius: 0,marginTop: 50};
 export class NavbarB extends React.Component<naviB, {}> {
     render() {

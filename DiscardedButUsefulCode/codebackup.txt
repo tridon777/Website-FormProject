@@ -1,0 +1,20 @@
+<Nav bsStyle="pills" stacked>
+                    <NavItem eventKey="first">
+                        <h6>Create a New Form</h6>
+                        <Image src="/components/images/rightSize.png" responsive />
+                    </NavItem>
+                    <NavItem eventKey="second">
+                        <h6>View Existing Forms</h6>
+                        <Image src="/components/images/folderSize.png" responsive />
+                    </NavItem>
+                    <NavItem eventKey="third">
+                        <h6>View Database</h6>
+                        <Image src="/components/images/databaseSize.png" responsive />
+                    </NavItem>
+                </Nav >
+
+<ListGroup className="subListGroup">
+                    <ListGroupItem header="Create a New Form"><Image src="/components/images/rightSize.png" responsive /></ListGroupItem>
+                    <ListGroupItem header="View Existing Forms"><Image src="/components/images/folderSize.png" responsive /></ListGroupItem>
+                    <ListGroupItem header="View Database"><Image src="/components/images/databaseSize.png" responsive /></ListGroupItem>
+                </ListGroup>
