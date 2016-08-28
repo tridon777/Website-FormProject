@@ -7,7 +7,8 @@
     .subListGroup li img {
       display: block;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      cursor: auto; }
 
 .floatReset {
   float: none; }

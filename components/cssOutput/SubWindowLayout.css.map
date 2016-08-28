@@ -5,8 +5,8 @@
 		"../modularSass/SubWindowLayout.scss"
 	],
 	"sourcesContent": [
-		".subListGroup{\r\n    padding-left: .5em;\r\n    padding-top: .5em;\r\n    margin-bottom: .5em;\r\n\r\n    li {\r\n        text-align: center;\r\n\r\n        img {\r\n            display: block;\r\n            margin-left: auto;\r\n            margin-right: auto;\r\n        }\r\n    }\r\n}\r\n\r\n.floatReset{\r\n    float: none;\r\n}\r\n"
+		".subListGroup{\r\n    padding-left: .5em;\r\n    padding-top: .5em;\r\n    margin-bottom: .5em;\r\n\r\n    li {\r\n        text-align: center;\r\n\r\n        img {\r\n            display: block;\r\n            margin-left: auto;\r\n            margin-right: auto;\r\n            cursor: auto;\r\n        }\r\n    }\r\n}\r\n\r\n.floatReset{\r\n    float: none;\r\n}\r\n\r\n"
 	],
-	"mappings": "AAAA,AAAA,aAAa,CAAA;EACT,YAAY,EAAE,IAAK;EACnB,WAAW,EAAE,IAAK;EAClB,aAAa,EAAE,IAAK,GAWvB;EAdD,AAKI,aALS,CAKT,EAAE,CAAC;IACC,UAAU,EAAE,MAAO,GAOtB;IAbL,AAQQ,aARK,CAKT,EAAE,CAGE,GAAG,CAAC;MACA,OAAO,EAAE,KAAM;MACf,WAAW,EAAE,IAAK;MAClB,YAAY,EAAE,IAAK,GACtB;;AAIT,AAAA,WAAW,CAAA;EACP,KAAK,EAAE,IAAK,GACf",
+	"mappings": "AAAA,AAAA,aAAa,CAAA;EACT,YAAY,EAAE,IAAK;EACnB,WAAW,EAAE,IAAK;EAClB,aAAa,EAAE,IAAK,GAYvB;EAfD,AAKI,aALS,CAKT,EAAE,CAAC;IACC,UAAU,EAAE,MAAO,GAQtB;IAdL,AAQQ,aARK,CAKT,EAAE,CAGE,GAAG,CAAC;MACA,OAAO,EAAE,KAAM;MACf,WAAW,EAAE,IAAK;MAClB,YAAY,EAAE,IAAK;MACnB,MAAM,EAAE,IAAK,GAChB;;AAIT,AAAA,WAAW,CAAA;EACP,KAAK,EAAE,IAAK,GACf",
 	"names": []
 }

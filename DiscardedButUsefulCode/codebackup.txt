@@ -18,3 +18,5 @@
                     <ListGroupItem header="View Existing Forms"><Image src="/components/images/folderSize.png" responsive /></ListGroupItem>
                     <ListGroupItem header="View Database"><Image src="/components/images/databaseSize.png" responsive /></ListGroupItem>
                 </ListGroup>
+
+node-sass --watch --recursive --output css      --source-map true --source-map-contents sass
