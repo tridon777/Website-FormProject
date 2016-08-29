@@ -1,6 +1,6 @@
 const path = require('path');
 
-
+const webpack = require("webpack");
 
 
 module.exports = {
@@ -34,6 +34,10 @@ module.exports = {
             { test: /\.js$/, loader: "source-map-loader" }
         ]
     },
+
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin()
+    ],
 
     sassLoader: {
         includePaths: [path.resolve(__dirname, "./modularSass")]
