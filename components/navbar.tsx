@@ -19,7 +19,11 @@ export class NavbarB extends React.Component<naviB, {}> {
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
+
                 <Navbar.Collapse>
+                    <Nav pullLeft>
+                        <NavItem href="http://www.psearcy.com/formProject" >Form Builder Project</NavItem>
+                    </Nav>
                     <Nav pullRight>
 
                             <NavItem href="http://www.psearcy.com" >Home</NavItem>
@@ -27,7 +31,7 @@ export class NavbarB extends React.Component<naviB, {}> {
 
                             <NavItem href="http://www.psearcy.com/about" >About</NavItem>
 
-                            <NavItem href="http://www.psearcy.com/formProject" >Form Builder Project</NavItem>
+                            <NavItem href="http://www.psearcy.com/projects" >Projects</NavItem>
 
 
                             <NavItem href="http://www.psearcy.com/contact" > Contact</NavItem>
