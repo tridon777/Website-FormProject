@@ -22,7 +22,7 @@ export class MainWindow extends React.Component<test, any> {
     render() {
         const middle = this.props.middle;
 return          <Row style={correction2}>
-                    <Col xs={10}  md={10} style={{left:"1.125em", border:"1px solid #b7544d"}} >
+                    <Col xs={11}  md={11} style={{left:"1.125em",right:"1.125em", border:"1px solid #b7544d"}} >
                         <Row style={{height: 50, backgroundColor: "#0f504e"}}>
                             <Col xs={11} md={11} style={{textAlign: "left",verticalAlign: "center", fontSize: 24, lineHeight:2, color:"white" }}>
                                 Compliance Datastore System

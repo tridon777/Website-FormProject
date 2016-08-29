@@ -21438,7 +21438,7 @@ var MainWindow = (function (_super) {
     }
     MainWindow.prototype.render = function () {
         var middle = this.props.middle;
-        return React.createElement(react_bootstrap_1.Row, {style: correction2}, React.createElement(react_bootstrap_1.Col, {xs: 10, md: 10, style: { left: "1.125em", border: "1px solid #b7544d" }}, React.createElement(react_bootstrap_1.Row, {style: { height: 50, backgroundColor: "#0f504e" }}, React.createElement(react_bootstrap_1.Col, {xs: 11, md: 11, style: { textAlign: "left", verticalAlign: "center", fontSize: 24, lineHeight: 2, color: "white" }}, "Compliance Datastore System"), React.createElement(react_bootstrap_1.Col, {xs: 1, md: 1}, React.createElement("i", {className: "fa fa-cog fa-1", style: faFix}))), React.createElement(react_bootstrap_1.Row, null, React.createElement(react_bootstrap_1.Tab.Container, {id: "verticalTab", defaultActiveKey: "left"}, React.createElement(react_bootstrap_1.Row, null, React.createElement(LeftPanel_1.LeftPanel, null), middle)))));
+        return React.createElement(react_bootstrap_1.Row, {style: correction2}, React.createElement(react_bootstrap_1.Col, {xs: 11, md: 11, style: { left: "1.125em", right: "1.125em", border: "1px solid #b7544d" }}, React.createElement(react_bootstrap_1.Row, {style: { height: 50, backgroundColor: "#0f504e" }}, React.createElement(react_bootstrap_1.Col, {xs: 11, md: 11, style: { textAlign: "left", verticalAlign: "center", fontSize: 24, lineHeight: 2, color: "white" }}, "Compliance Datastore System"), React.createElement(react_bootstrap_1.Col, {xs: 1, md: 1}, React.createElement("i", {className: "fa fa-cog fa-1", style: faFix}))), React.createElement(react_bootstrap_1.Row, null, React.createElement(react_bootstrap_1.Tab.Container, {id: "verticalTab", defaultActiveKey: "left"}, React.createElement(react_bootstrap_1.Row, null, React.createElement(LeftPanel_1.LeftPanel, null), middle)))));
     };
     return MainWindow;
 }(React.Component));
@@ -21461,30 +21461,24 @@ var $ = __webpack_require__(321);
 var react_bootstrap_1 = __webpack_require__(47);
 var NewForm = (function (_super) {
     __extends(NewForm, _super);
-    function NewForm() {
-        _super.apply(this, arguments);
+    function NewForm(props) {
+        _super.call(this, props);
+        this.state = { sData: Array() };
     }
-    NewForm.prototype.successCall = function (data) {
-        console.log(data);
-    };
-    NewForm.prototype.AjaxCall = function (url, data, errorMessage, successCall) {
-        var request = $.ajax({
-            type: "GET",
-            url: url,
-            data: data,
-            dataType: "json",
-            xhrFields: { withCredentials: false }
-        });
-        request.done(successCall);
-        request.fail(function (jqXHR, textStatus, errorThrown) {
-            console.log(textStatus);
-        });
-    };
     NewForm.prototype.componentDidMount = function () {
-        this.AjaxCall("http://localhost:3000/api/employee", {}, "Something went wrong", this.successCall);
+        var _this = this;
+        $.getJSON("http://localhost:3000/api/forms", function (result) {
+            var tempArray = [];
+            result.forEach(function (x, i) {
+                tempArray.push(React.createElement(react_bootstrap_1.ListGroupItem, {key: i}, "ID: ", x.ID, " Name: ", x.Name));
+            });
+            _this.setState({ sData: tempArray });
+        }, NewForm.bind(this));
+    };
+    NewForm.prototype.componentWillUnmount = function () {
     };
     NewForm.prototype.render = function () {
-        return React.createElement(react_bootstrap_1.Col, {xs: 3, sm: 3, md: 3, lg: 3}, React.createElement("div", null, " ", this.props.result, " "));
+        return React.createElement(react_bootstrap_1.Col, {xs: 3, sm: 3, md: 3, lg: 3}, React.createElement(react_bootstrap_1.ListGroup, {id: "test", className: "subListGroup"}, " ", this.state.sData, " "));
     };
     return NewForm;
 }(React.Component));
@@ -55473,7 +55467,7 @@ var LeftPanel = (function (_super) {
         _super.apply(this, arguments);
     }
     LeftPanel.prototype.render = function () {
-        return React.createElement(react_bootstrap_1.Col, {xs: 3, sm: 3, md: 3, lg: 3, className: "floatReset"}, React.createElement(react_bootstrap_1.ListGroup, {className: "subListGroup"}, React.createElement(react_router_bootstrap_1.LinkContainer, {to: "/new"}, React.createElement(react_bootstrap_1.ListGroupItem, {header: "Create a New Form"}, React.createElement("a", null, React.createElement(react_bootstrap_1.Image, {src: "/components/images/rightSize.png", responsive: true})))), React.createElement(react_router_bootstrap_1.LinkContainer, {to: "/existing"}, React.createElement(react_bootstrap_1.ListGroupItem, {id: "existingForm", header: "View Existing Forms"}, React.createElement("a", null, React.createElement(react_bootstrap_1.Image, {src: "/components/images/folderSize.png", responsive: true})))), React.createElement(react_router_bootstrap_1.LinkContainer, {to: "/view"}, React.createElement(react_bootstrap_1.ListGroupItem, {id: "viewDatabase", header: "View Database"}, React.createElement("a", null, React.createElement(react_bootstrap_1.Image, {src: "/components/images/databaseSize.png", responsive: true}))))));
+        return React.createElement(react_bootstrap_1.Col, {xs: 3, sm: 3, md: 3, lg: 3}, React.createElement(react_bootstrap_1.ListGroup, {className: "subListGroup", style: { textAlign: "center" }}, React.createElement(react_router_bootstrap_1.LinkContainer, {to: "/new"}, React.createElement(react_bootstrap_1.ListGroupItem, {header: "Create a New Form"}, React.createElement(react_bootstrap_1.Image, {src: "/components/images/rightSize.png", responsive: true}))), React.createElement(react_router_bootstrap_1.LinkContainer, {to: "/existing"}, React.createElement(react_bootstrap_1.ListGroupItem, {id: "existingForm", header: "View Existing Forms"}, React.createElement(react_bootstrap_1.Image, {src: "/components/images/folderSize.png", responsive: true}))), React.createElement(react_router_bootstrap_1.LinkContainer, {to: "/view"}, React.createElement(react_bootstrap_1.ListGroupItem, {id: "viewDatabase", header: "View Database"}, React.createElement(react_bootstrap_1.Image, {src: "/components/images/databaseSize.png", responsive: true})))));
     };
     return LeftPanel;
 }(React.Component));
