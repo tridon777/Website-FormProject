@@ -5,7 +5,6 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Row, Col, Image, Panel, Ta
 import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router';
 import { LeftPanel } from './LeftPanel';
-import { SubWindowLayout } from './SubWindowLayout';
 import { NewForm, ExistingForm, ViewDatabase} from './MiddlePanel';
 
 

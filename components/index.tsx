@@ -2,7 +2,7 @@ import * as React from "react";
 import { Row, Grid } from 'react-bootstrap';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Link, IndexLink, browserHistory } from 'react-router';
-import { SubWindowLayout } from './SubWindowLayout';
+
 import { NavbarB } from './navbar';
 import { MainWindow } from './MainWindow';
 import { Footer } from './Footer';
