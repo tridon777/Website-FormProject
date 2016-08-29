@@ -21,18 +21,17 @@ export class NavbarB extends React.Component<naviB, {}> {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav pullRight>
-                        <LinkContainer to="/">
-                            <NavItem >Home</NavItem>
-                        </LinkContainer>
-                        <LinkContainer to="/about">
-                            <NavItem >About</NavItem>
-                        </LinkContainer>
-                        <LinkContainer to="/projects">
-                            <NavItem >Projects</NavItem>
-                        </LinkContainer>
-                        <LinkContainer to="/contact">
-                            <NavItem >Contact</NavItem>
-                        </LinkContainer>
+
+                            <NavItem href="http://www.psearcy.com" >Home</NavItem>
+
+
+                            <NavItem href="http://www.psearcy.com/about" >About</NavItem>
+
+                            <NavItem href="http://www.psearcy.com/formProject" >Form Builder Project</NavItem>
+
+
+                            <NavItem href="http://www.psearcy.com/contact" > Contact</NavItem>
+
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

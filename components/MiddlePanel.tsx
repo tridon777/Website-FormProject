@@ -23,7 +23,7 @@ export class NewForm extends React.Component<any,any>{
     }
 
     componentDidMount(){
-        $.getJSON("http://localhost:3000/api/forms",(result:any) => {
+        $.getJSON("http://localhost:3001/api/forms",(result:any) => {
             var tempArray: Array<any>= [];
             result.forEach((x:any,i:any)=>{
                 tempArray.push(<ListGroupItem key={i}>ID: {x.ID} Name: {x.Name}</ListGroupItem>);
