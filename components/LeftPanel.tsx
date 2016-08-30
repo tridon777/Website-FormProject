@@ -4,7 +4,7 @@ import { Row, Col, ListGroup, ListGroupItem, Image, Nav, NavItem } from "react-b
 import { Link  } from 'react-router';
 import { LinkContainer } from 'react-router-bootstrap';
 
-let imageCenter = {marginLeft:"auto",marginRight:"auto",display:"block"};
+let imageCenter = {marginLeft:"auto",marginRight:"auto",display:"block",cursor:"pointer"};
 export class LeftPanel extends React.Component<any, any> {
 
     render () {
