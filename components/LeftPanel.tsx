@@ -11,13 +11,13 @@ export class LeftPanel extends React.Component<any, any> {
        return <Col xs={3} sm={3} md={3} lg={3} >
                 <ListGroup className="subListGroup" style={{textAlign: "center"}}>
                     <LinkContainer to="/formProject/new">
-                        <ListGroupItem  header="Create a New Form"   ><Image src="/components/images/rightSize.png" style={imageCenter} responsive /></ListGroupItem>
+                        <ListGroupItem  header="Create a New Form"   ><Image src="/formProject/components/images/rightSize.png" style={imageCenter} responsive /></ListGroupItem>
                     </LinkContainer>
                     <LinkContainer to="/formProject/existing">
-                        <ListGroupItem id="existingForm"  header="View Existing Forms" ><Image src="/components/images/folderSize.png" style={imageCenter} responsive /></ListGroupItem>
+                        <ListGroupItem id="existingForm"  header="View Existing Forms" ><Image src="/formProject/components/images/folderSize.png" style={imageCenter} responsive /></ListGroupItem>
                      </LinkContainer>
                      <LinkContainer to="/formProject/view">
-                        <ListGroupItem id="viewDatabase"  header="View Database" ><Image src="/components/images/databaseSize.png" style={imageCenter} responsive /></ListGroupItem>
+                        <ListGroupItem id="viewDatabase"  header="View Database" ><Image src="/formProject/components/images/databaseSize.png" style={imageCenter} responsive /></ListGroupItem>
                     </LinkContainer>
                 </ListGroup>
             </Col>
