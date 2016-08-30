@@ -29,7 +29,7 @@ class Page extends React.Component<any,void> {
 
 render((
     <Router history={browserHistory} >
-        <Route path="/formProject" component={Page}>
+        <Route path="/" component={Page}>
             <Route path="new" components={{middle: NewForm}} />
             <Route path="existing" components={{middle: ExistingForm}} />
             <Route path="view" components={{middle: ViewDatabase}} />
