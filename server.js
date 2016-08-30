@@ -9,10 +9,10 @@ const app = express();
 
 
 const path = require('path');
-app.use('/formProject/dist', serveStatic(path.join(__dirname, './dist')));
-app.use('/formProject/components/cssOutput', serveStatic(path.join(__dirname, './components/cssOutput')));
-app.use('/formProject/components/images', serveStatic(path.join(__dirname, './components/images')));
-app.use('/formProject/node_modules', serveStatic(path.join(__dirname, './node_modules')));
+app.use('/dist', serveStatic(path.join(__dirname, './dist')));
+app.use('/components/cssOutput', serveStatic(path.join(__dirname, './components/cssOutput')));
+app.use('/components/images', serveStatic(path.join(__dirname, './components/images')));
+app.use('/node_modules', serveStatic(path.join(__dirname, './node_modules')));
 
 
 app.get('*', (req,res) => {
